@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapese</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            background-color: red;
+            margin: 30px;
+            height: 2320px;
+            width: 233px;
+            border: 2px solid black;
+        }
+
+        .box2{
+            background-color: green;
+            /* margin: 20px; */
+            height: 20px;
+            width: 100%;
+            padding: 2px;
+            border: 1px solid aqua;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi expedita quo, eligendi dolorum blanditiis ipsa? Odit illum corrupti assumenda consequuntur praesentium exercitationem id maxime, harum nesciunt ducimus, sequi soluta molestias? Asperiores, distinctio illum quod quisquam nisi velit quibusdam. Animi veniam quis eos corrupti temporibus reprehenderit nesciunt quia magni id!</p>
+        <div class="box2">
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, maiores est placeat excepturi harum sapiente voluptas cum corrupti tenetur quaerat pariatur, quas non eius beatae laboriosam voluptatem tempore! Aspernatur inventore, eos voluptatum quaerat ex ab, praesentium fuga tempora perferendis eaque laudantium magnam eum autem mollitia ullam omnis maiores voluptates enim?</p> -->
+        </div>
+    </div>
+
+</body>
+</html>

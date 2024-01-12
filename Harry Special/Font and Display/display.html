@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1{
+            width: 431px;
+            height: 1134px;
+            background-color: red;
+            /* display: inline; */
+/* This is allowed in margin, padding, hight, width */
+            /* (display: inline-block;)*/
+            display: inline-block;
+            margin: 20px;
+            padding: 40px;
+            
+ /* This Property is aply the disply hidden */
+            /* (disply:none) */
+            /* display: none; */
+            
+/* This Property aply the disply visible hidden */
+            /* visibility: hidden; */
+
+/* This Properry apply the moving text in content */
+            text-align: center;
+            /* text-align: end; */
+            /* text-align: start; */
+            /* text-align:left; */
+            /* text-align: right; */
+        
+        }
+        
+        .box2{
+            width: 431px;
+            height: 1134px;
+            background-color: green;
+            /* display: inline-block; */
+ /* This is not allowed in margin, padding, hight,  width */
+            /* (display: inline) */
+            display: inline;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit 
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet 
+    </div>
+</body>
+</html>

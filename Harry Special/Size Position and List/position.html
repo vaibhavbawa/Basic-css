@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positions</title>
     <style>
-        *{
+        /* *{
             margin: 0;
             padding: 0;
+        } */
+        ul{
+            background-color: red;
         }
-        li{
-            display: inline;
-        }
+        /* li{ */
+            /* display: inline; */
+            /* list-style: circle; */
+            /* list-style: square inside; */
+            /* list-style: square outside url("image.jpg"); */
+        /* } */
         header{
             background-color: black;
             color: white;
             height: 70px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
         p{
             text-align: center;
@@ -26,23 +35,34 @@
             width: 50vw;
             height: 50vh;
             margin: auto;
+            padding: 0 34px;
             position: relative;
+            /* z-index: 10; */
         }
         .box{
-            height: 200px;
-            width: 200px;
-            background-color: orange;
-            /* position: absolute;
-            right: 0; */
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+             position: absolute;
+             /* top: 50px; */
+             /* right: 0px; */
+             bottom: 0px;
+             left: 0px;
+             /* position: fixed; */
+            
+            /* position: relative; */
+            /* top: 15px; */
+            /* left: 15px; */
             
             
         }
         
         .box2{
-            background-color: yellowgreen;
-            height: 200px;
-            width: 200px;
-            position: relative;
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            /* position: absolute; */
+            /* position: relative; */
             
         }
     </style>
@@ -63,8 +83,13 @@
             I am a Box
         </div>
         <div class="box2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi corporis dicta, rem laborum molestias pariatur repellat inventore suscipit minima architecto numquam in facere repudiandae dolor unde, maxime eveniet dignissimos!
+            Lorem ipsum dolor sit 
         </div>
     </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Oranges</li>
+    </ul>
 </body>
 </html>
